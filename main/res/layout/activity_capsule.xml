@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.pitt.cs.cs1635.vsc5.group_project.MainActivity">
+
+    <TextView
+        android:id="@+id/textView_YourCapsules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR CAPSULES"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorBackgroundTint"
+        android:textSize="15pt"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/capsule_list"
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_below="@id/textView_YourCapsules"
+        >
+    </ListView>
+
+    <Button
+        android:id="@+id/create_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capsule_list"
+        android:onClick="newCapsule"
+        android:text="+ Create New Capsule"
+        android:textAllCaps="false"
+        android:textSize="10pt"
+        />
+
+    <Button
+        android:id="@+id/add_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Add Photo"
+        android:textAllCaps="false"
+        android:layout_below="@+id/create_new"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/share"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:onClick="toShare"
+        android:layout_below="@id/create_new"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Share"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_photo"
+        android:layout_below="@+id/create_new"
+        android:onClick="toSettings"
+        android:text="Settings"
+        tools:textAllCaps="false" />
+
+</RelativeLayout>

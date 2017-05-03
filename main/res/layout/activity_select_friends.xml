@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.pitt.cs.cs1635.vsc5.group_project.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView_SelectFriends"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Select Friends"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorBackgroundTint"
+        android:textSize="15pt"
+        android:layout_alignParentTop="true"
+        android:gravity="center" />
+
+
+    <ListView
+        android:id="@+id/checkable_list"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_below="@+id/textView_SelectFriends"
+        />
+
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:onClick="backCapsuleConfig"
+        android:layout_alignParentBottom="true"
+        android:text="&lt; Back"
+
+        />
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:onClick="backHome"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Next &gt;"
+
+        />
+</RelativeLayout>

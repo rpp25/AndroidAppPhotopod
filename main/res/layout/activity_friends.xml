@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.pitt.cs.cs1635.vsc5.group_project.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView_FriendsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR FRIENDS"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorBackgroundTint"
+        android:textSize="15pt"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_below="@id/textView_FriendsHeader"
+
+        >
+    </ListView>
+
+    <Button
+        android:id="@+id/add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/friends_list"
+        android:onClick="addFriendButtonListener"
+        android:text="+ Add New Friend"
+        android:textAllCaps="false"
+        android:textSize="10pt"
+        />
+
+
+
+
+</RelativeLayout>

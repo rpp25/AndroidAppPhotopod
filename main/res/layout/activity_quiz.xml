@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.pitt.cs.cs1635.vsc5.group_project.Quiz">
+
+    <TextView
+        android:id="@+id/textView_Quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNLOCK QUIZ"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorBackgroundTint"
+        android:textSize="15pt"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_below="@id/textView_Quiz"
+        android:id="@+id/lv"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/questionHeader"
+                android:textSize="20pt"
+                android:textStyle="bold"
+                android:text="Question:"
+                />
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/questionHeader"
+                android:text="THIS IS A QUESTION WOWOWOWOWO?"
+                android:textSize="13pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/choicesHeader"
+                android:layout_below="@id/question"
+                android:textSize="20pt"
+                android:textStyle="bold"
+                android:text="Choices:"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choicesHeader"
+                android:id="@+id/choiceGroup"
+                >
+
+                <RadioButton
+                    android:id="@+id/choice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THIS IS A CHOICE ANSWER"
+                    android:textSize="8pt" />
+
+                <RadioButton
+                    android:id="@+id/choice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THIS IS A CHOICE ANSWER"
+                    android:textSize="8pt" />
+
+                <RadioButton
+                    android:id="@+id/choice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THIS IS A CHOICE ANSWER"
+                    android:textSize="8pt" />
+
+                <RadioButton
+                    android:id="@+id/choice4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THIS IS A CHOICE ANSWER"
+                    android:textSize="8pt" />
+            </RadioGroup>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:onClick="toShare"
+        android:layout_below="@id/lv"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="NEXT"
+        android:textAllCaps="false"
+        />
+
+
+</RelativeLayout>
